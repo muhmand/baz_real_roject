@@ -1,5 +1,5 @@
 package codingbat;
-public class FirstTwo_FirstHalf {
+public class FirstTwo_FirstHalf_WithOutEnd {
 
 
 /*
@@ -30,11 +30,28 @@ firstHalf("abcdef") → "abc"
         /*if (str.length() % 2 == 0){*/
         return str.substring(0,str.length()/2);
     }
+    /*
+    Given a string, return a version without the first and last char, so "Hello" yields "ell". The string length will be at least 2.
+withoutEnd("Hello") → "ell"
+withoutEnd("java") → "av"
+withoutEnd("coding") → "odin"
+     */
+    public static String withoutEnd(String str) {
+        return str.substring(1, str.length()-1);
+    }
+
 
 
     public static void main(String[] args) {
         System.out.println(firstTwo("Apple"));
         System.out.println("---------------------");
         System.out.println(firstHalf("WooHoo"));
+        System.out.println("-----------------------");
+        System.out.println(withoutEnd("Hello"));
+
+        for (int i = 0; i < 20; i++) {
+            System.out.println(i);
+
+        }
     }
     }
