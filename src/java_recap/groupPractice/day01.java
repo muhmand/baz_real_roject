@@ -89,6 +89,9 @@ public class day01 {
         return isTrue;
     }
 }
+
+
+
 /*
 Find missing numbers from 1,7,4,3,9,10
 Logic: ?
